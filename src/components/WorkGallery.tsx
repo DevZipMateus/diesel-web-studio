@@ -1,4 +1,4 @@
-import { Wrench, Zap, Settings, Award } from 'lucide-react';
+import { Wrench, Zap, Settings, Award, Gauge } from 'lucide-react';
 
 const WorkGallery = () => {
   const workItems = [
@@ -8,6 +8,13 @@ const WorkGallery = () => {
       description: "Recondicionamento completo de bomba injetora Caterpillar com teste de pressão e calibração.",
       category: "Bomba Injetora",
       icon: Wrench
+    },
+    {
+      image: "/assets/bomba-alta-cp3.jpg",
+      title: "Bomba de Alta Pressão CP3",
+      description: "Teste e calibração de bomba de alta pressão CP3 em equipamento especializado com verificação de vazão e pressão.",
+      category: "Alta Pressão",
+      icon: Gauge
     }
   ];
 
@@ -87,13 +94,13 @@ const WorkGallery = () => {
             {/* Placeholder cards for more work examples */}
             <div className="bg-card rounded-lg shadow-elegant p-8 text-center border-2 border-dashed border-muted">
               <div className="bg-muted/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Wrench className="w-8 h-8 text-muted-foreground" />
+                <Settings className="w-8 h-8 text-muted-foreground" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">
-                Mais trabalhos
+                Unidades injetoras
               </h3>
               <p className="text-muted-foreground text-sm">
-                Em breve mostraremos mais exemplos dos nossos serviços
+                Em breve: exemplos de unidades injetoras reparadas
               </p>
             </div>
             
@@ -102,10 +109,10 @@ const WorkGallery = () => {
                 <Zap className="w-8 h-8 text-muted-foreground" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">
-                Projetos especiais
+                Bicos injetores
               </h3>
               <p className="text-muted-foreground text-sm">
-                Casos especiais e soluções customizadas
+                Testes de vazão e limpeza ultrassônica
               </p>
             </div>
           </div>
