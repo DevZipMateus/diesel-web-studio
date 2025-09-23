@@ -22,6 +22,13 @@ const WorkGallery = () => {
       description: "Teste de vazão e calibração do bico injetor 120043 em bancada especializada com medição precisa de pulverização.",
       category: "Bico Injetor",
       icon: Zap
+    },
+    {
+      image: "/assets/bomba-injetora-mercedes-up.jpg",
+      title: "Bomba Injetora Mercedes UP",
+      description: "Recondicionamento e teste da bomba injetora Mercedes UP (Bosch) em bancada com verificação de todos os parâmetros técnicos.",
+      category: "Bomba Injetora",
+      icon: Wrench
     }
   ];
 
@@ -116,10 +123,10 @@ const WorkGallery = () => {
                 <Award className="w-8 h-8 text-muted-foreground" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">
-                Sistemas eletrônicos
+                Módulos ECU
               </h3>
               <p className="text-muted-foreground text-sm">
-                Diagnóstico e reparo de módulos ECU
+                Diagnóstico e reparo de centrais eletrônicas
               </p>
             </div>
           </div>
