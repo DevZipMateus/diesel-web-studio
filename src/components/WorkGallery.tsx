@@ -111,19 +111,6 @@ const WorkGallery = () => {
                 </div>
               </div>
             ))}
-            
-            {/* Placeholder card for unidades injetoras */}
-            <div className="bg-card rounded-lg shadow-elegant p-8 text-center border-2 border-dashed border-muted">
-              <div className="bg-muted/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Settings className="w-8 h-8 text-muted-foreground" />
-              </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">
-                Unidades injetoras
-              </h3>
-              <p className="text-muted-foreground text-sm">
-                Em breve: exemplos de unidades injetoras reparadas
-              </p>
-            </div>
           </div>
 
           {/* Capabilities Section */}
