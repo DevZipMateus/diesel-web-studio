@@ -44,37 +44,37 @@ const Services = () => {
     <section id="servicos" className="section-padding">
       <div className="container mx-auto">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-foreground mb-4 md:mb-6">
               Nossos serviços
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto">
               Oferecemos soluções completas em injeção eletrônica diesel com tecnologia avançada e profissionais especializados.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
             {services.map((service, index) => (
               <div 
                 key={index}
-                className="bg-card p-8 rounded-lg shadow-elegant hover:shadow-glow transition-all duration-300 group"
+                className="bg-card p-6 md:p-8 rounded-lg shadow-elegant hover:shadow-glow transition-all duration-300 group"
               >
-                <div className="bg-gradient-accent w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="w-8 h-8 text-white" />
+                <div className="bg-gradient-accent w-12 md:w-16 h-12 md:h-16 rounded-lg flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <service.icon className="w-6 md:w-8 h-6 md:h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-heading font-semibold text-foreground mb-4">
+                <h3 className="text-lg md:text-xl font-heading font-semibold text-foreground mb-3 md:mb-4">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
                   {service.description}
                 </p>
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li 
                       key={featureIndex}
-                      className="flex items-center text-sm text-muted-foreground"
+                      className="flex items-center text-xs md:text-sm text-muted-foreground"
                     >
-                      <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-accent rounded-full mr-3 flex-shrink-0"></div>
                       {feature}
                     </li>
                   ))}
@@ -84,11 +84,11 @@ const Services = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="bg-gradient-hero text-white p-12 rounded-lg text-center">
-            <h3 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+          <div className="bg-gradient-hero text-white p-8 md:p-12 rounded-lg text-center">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold mb-3 md:mb-4">
               Precisa de um orçamento?
             </h3>
-            <p className="text-lg mb-8 text-white/90 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg mb-6 md:mb-8 text-white/90 max-w-2xl mx-auto">
               Entre em contato conosco e receba um orçamento personalizado para as necessidades do seu veículo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -96,7 +96,7 @@ const Services = () => {
                 href="https://wa.me/5581997612976"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-outline-hero px-8 py-3 rounded-lg font-semibold inline-flex items-center gap-2"
+                className="btn-outline-hero px-6 md:px-8 py-3 rounded-lg font-semibold inline-flex items-center justify-center gap-2"
               >
                 <img 
                   src="/assets/whatsapp-icon.png" 
@@ -107,7 +107,7 @@ const Services = () => {
               </a>
               <a
                 href="tel:+5581997612976"
-                className="btn-outline-hero px-8 py-3 rounded-lg font-semibold"
+                className="btn-outline-hero px-6 md:px-8 py-3 rounded-lg font-semibold"
               >
                 Ligar agora
               </a>
