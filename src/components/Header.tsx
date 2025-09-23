@@ -91,8 +91,13 @@ const Header = () => {
               href="https://wa.me/5581997612976"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-hero px-6 py-2 rounded-lg font-medium"
+              className="btn-hero px-6 py-2 rounded-lg font-medium inline-flex items-center gap-2"
             >
+              <img 
+                src="/assets/whatsapp-icon.png" 
+                alt="WhatsApp"
+                className="w-4 h-4"
+              />
               Orçamento
             </a>
           </div>
@@ -138,8 +143,13 @@ const Header = () => {
                 href="https://wa.me/5581997612976"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-hero px-6 py-2 rounded-lg font-medium text-center w-fit"
+                className="btn-hero px-6 py-2 rounded-lg font-medium text-center w-fit inline-flex items-center gap-2"
               >
+                <img 
+                  src="/assets/whatsapp-icon.png" 
+                  alt="WhatsApp"
+                  className="w-4 h-4"
+                />
                 Orçamento
               </a>
             </div>

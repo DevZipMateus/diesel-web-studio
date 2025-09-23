@@ -82,8 +82,13 @@ const Footer = () => {
                 href="https://wa.me/5581997612976"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors inline-block"
+                className="bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors inline-flex items-center gap-2"
               >
+                <img 
+                  src="/assets/whatsapp-icon.png" 
+                  alt="WhatsApp"
+                  className="w-4 h-4"
+                />
                 Solicitar Orçamento
               </a>
             </div>

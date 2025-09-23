@@ -23,8 +23,12 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="btn-hero px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center gap-2"
             >
+              <img 
+                src="/assets/whatsapp-icon.png" 
+                alt="WhatsApp"
+                className="w-5 h-5"
+              />
               Solicitar Orçamento
-              <ArrowRight className="w-5 h-5" />
             </a>
             <button 
               onClick={() => document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' })}

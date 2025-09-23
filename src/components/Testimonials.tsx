@@ -133,8 +133,13 @@ const Testimonials = () => {
                 href="https://wa.me/5581997612976"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-outline-hero px-8 py-3 rounded-lg font-semibold"
+                className="btn-outline-hero px-8 py-3 rounded-lg font-semibold inline-flex items-center gap-2"
               >
+                <img 
+                  src="/assets/whatsapp-icon.png" 
+                  alt="WhatsApp"
+                  className="w-4 h-4"
+                />
                 Solicitar orçamento
               </a>
             </div>

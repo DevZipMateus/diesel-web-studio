@@ -1,5 +1,3 @@
-import { MessageCircle } from 'lucide-react';
-
 const WhatsAppButton = () => {
   return (
     <a
@@ -9,7 +7,11 @@ const WhatsAppButton = () => {
       className="whatsapp-float"
       aria-label="Entrar em contato pelo WhatsApp"
     >
-      <MessageCircle className="w-6 h-6" />
+      <img 
+        src="/assets/whatsapp-icon.png" 
+        alt="WhatsApp"
+        className="w-8 h-8"
+      />
     </a>
   );
 };
