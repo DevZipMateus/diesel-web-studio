@@ -29,6 +29,13 @@ const WorkGallery = () => {
       description: "Recondicionamento e teste da bomba injetora Mercedes UP (Bosch) em bancada com verificação de todos os parâmetros técnicos.",
       category: "Bomba Injetora",
       icon: Wrench
+    },
+    {
+      image: "/assets/bomba-injetora-dp100.jpg",
+      title: "Bomba Injetora DP100",
+      description: "Teste completo de bomba injetora DP100 em bancada com verificação de performance e calibração de todos os cilindros.",
+      category: "Bomba Injetora",
+      icon: Wrench
     }
   ];
 
@@ -105,7 +112,7 @@ const WorkGallery = () => {
               </div>
             ))}
             
-            {/* Placeholder cards for more work examples */}
+            {/* Placeholder card for unidades injetoras */}
             <div className="bg-card rounded-lg shadow-elegant p-8 text-center border-2 border-dashed border-muted">
               <div className="bg-muted/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Settings className="w-8 h-8 text-muted-foreground" />
@@ -115,18 +122,6 @@ const WorkGallery = () => {
               </h3>
               <p className="text-muted-foreground text-sm">
                 Em breve: exemplos de unidades injetoras reparadas
-              </p>
-            </div>
-            
-            <div className="bg-card rounded-lg shadow-elegant p-8 text-center border-2 border-dashed border-muted">
-              <div className="bg-muted/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-muted-foreground" />
-              </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">
-                Módulos ECU
-              </h3>
-              <p className="text-muted-foreground text-sm">
-                Diagnóstico e reparo de centrais eletrônicas
               </p>
             </div>
           </div>
