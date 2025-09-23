@@ -15,6 +15,13 @@ const WorkGallery = () => {
       description: "Teste e calibração de bomba de alta pressão CP3 em equipamento especializado com verificação de vazão e pressão.",
       category: "Alta Pressão",
       icon: Gauge
+    },
+    {
+      image: "/assets/bico-injetor-120043.jpg",
+      title: "Bico Injetor 120043",
+      description: "Teste de vazão e calibração do bico injetor 120043 em bancada especializada com medição precisa de pulverização.",
+      category: "Bico Injetor",
+      icon: Zap
     }
   ];
 
@@ -106,13 +113,13 @@ const WorkGallery = () => {
             
             <div className="bg-card rounded-lg shadow-elegant p-8 text-center border-2 border-dashed border-muted">
               <div className="bg-muted/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Zap className="w-8 h-8 text-muted-foreground" />
+                <Award className="w-8 h-8 text-muted-foreground" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">
-                Bicos injetores
+                Sistemas eletrônicos
               </h3>
               <p className="text-muted-foreground text-sm">
-                Testes de vazão e limpeza ultrassônica
+                Diagnóstico e reparo de módulos ECU
               </p>
             </div>
           </div>
