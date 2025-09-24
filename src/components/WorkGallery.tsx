@@ -43,6 +43,13 @@ const WorkGallery = () => {
       description: "Recondicionamento completo de unidades injetoras Mercedes UP com testes especializados e calibração de alta precisão.",
       category: "Unidade Injetora",
       icon: Settings
+    },
+    {
+      image: "/assets/bomba-ve.jpg",
+      title: "Bomba Injetora VE",
+      description: "Teste e calibração de bomba injetora VE em bancada especializada com verificação completa de pressão e vazão.",
+      category: "Bomba Injetora",
+      icon: Wrench
     }
   ];
 
