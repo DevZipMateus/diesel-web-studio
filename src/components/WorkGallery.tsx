@@ -1,6 +1,21 @@
 import { Wrench, Zap, Settings, Award, Gauge } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 const WorkGallery = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState<{[key: number]: number}>({});
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex(prev => {
+        const newIndex = { ...prev };
+        // Alterna apenas o item que tem múltiplas imagens (índice 7)
+        newIndex[7] = (prev[7] || 0) === 0 ? 1 : 0;
+        return newIndex;
+      });
+    }, 3000); // Alterna a cada 3 segundos
+
+    return () => clearInterval(interval);
+  }, []);
   const workItems = [
     {
       image: "/assets/bomba-injetora-caterpillar.jpg",
@@ -52,7 +67,10 @@ const WorkGallery = () => {
       icon: Wrench
     },
     {
-      image: "/assets/unidades-up.jpg",
+      images: [
+        "/assets/unidade-ui.jpg",
+        "/assets/unidades-up.jpg"
+      ],
       title: "Unidades Injetoras UI e UP",
       description: "Recondicionamento e teste especializado de unidades injetoras UI e UP com calibração precisa e verificação eletrônica completa.",
       category: "Unidade Injetora",
@@ -108,11 +126,19 @@ const WorkGallery = () => {
                 className="bg-card rounded-lg shadow-elegant overflow-hidden hover:shadow-glow transition-all duration-300 group"
               >
                 <div className="aspect-video overflow-hidden">
-                  <img 
-                    src={item.image}
-                    alt={`${item.title} - Serviço especializado da Jpdiesel em injeção eletrônica diesel`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+                  {item.images ? (
+                    <img 
+                      src={item.images[currentImageIndex[index] || 0]}
+                      alt={`${item.title} - Serviço especializado da Jpdiesel em injeção eletrônica diesel`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  ) : (
+                    <img 
+                      src={item.image}
+                      alt={`${item.title} - Serviço especializado da Jpdiesel em injeção eletrônica diesel`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  )}
                 </div>
                 <div className="p-4 md:p-6">
                   <div className="flex items-center mb-3">
