@@ -36,6 +36,13 @@ const WorkGallery = () => {
       description: "Teste completo de bomba injetora DP100 em bancada com verificação de performance e calibração de todos os cilindros.",
       category: "Bomba Injetora",
       icon: Wrench
+    },
+    {
+      image: "/assets/unidades-mercedes-up.jpg",
+      title: "Unidades Injetoras Mercedes UP",
+      description: "Recondicionamento completo de unidades injetoras Mercedes UP com testes especializados e calibração de alta precisão.",
+      category: "Unidade Injetora",
+      icon: Settings
     }
   ];
 
