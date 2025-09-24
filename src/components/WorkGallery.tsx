@@ -8,8 +8,8 @@ const WorkGallery = () => {
     const interval = setInterval(() => {
       setCurrentImageIndex(prev => {
         const newIndex = { ...prev };
-        // Alterna apenas o item que tem múltiplas imagens (índice 7)
-        newIndex[7] = (prev[7] || 0) === 0 ? 1 : 0;
+        // Alterna apenas o item que tem múltiplas imagens (índice 6)
+        newIndex[6] = (prev[6] || 0) === 0 ? 1 : 0;
         return newIndex;
       });
     }, 3000); // Alterna a cada 3 segundos
@@ -51,13 +51,6 @@ const WorkGallery = () => {
       description: "Teste completo de bomba injetora DP100 em bancada com verificação de performance e calibração de todos os cilindros.",
       category: "Bomba Injetora",
       icon: Wrench
-    },
-    {
-      image: "/assets/unidades-mercedes-up.jpg",
-      title: "Unidades Injetoras Mercedes UP",
-      description: "Recondicionamento completo de unidades injetoras Mercedes UP com testes especializados e calibração de alta precisão.",
-      category: "Unidade Injetora",
-      icon: Settings
     },
     {
       image: "/assets/bomba-ve.jpg",
