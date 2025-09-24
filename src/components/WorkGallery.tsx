@@ -40,7 +40,7 @@ const WorkGallery = () => {
     },
     {
       image: "/assets/bomba-injetora-mercedes-up.jpg",
-      title: "Bomba Injetora Mercedes A",
+      title: "Bomba Injetora A",
       description: "Recondicionamento e teste da bomba injetora Mercedes A (Bosch) em bancada com verificação de todos os parâmetros técnicos.",
       category: "Bomba Injetora",
       icon: Wrench
