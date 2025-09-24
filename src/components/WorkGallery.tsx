@@ -50,6 +50,20 @@ const WorkGallery = () => {
       description: "Teste e calibração de bomba injetora VE em bancada especializada com verificação completa de pressão e vazão.",
       category: "Bomba Injetora",
       icon: Wrench
+    },
+    {
+      image: "/assets/unidade-ui.jpg",
+      title: "Unidade Injetora UI",
+      description: "Teste especializado de unidade injetora UI em equipamento de alta precisão com verificação eletrônica completa.",
+      category: "Unidade Injetora",
+      icon: Settings
+    },
+    {
+      image: "/assets/unidades-up.jpg",
+      title: "Unidades Injetoras UP",
+      description: "Recondicionamento e teste de unidades injetoras UP com calibração precisa e verificação de todos os parâmetros.",
+      category: "Unidade Injetora",
+      icon: Settings
     }
   ];
 
