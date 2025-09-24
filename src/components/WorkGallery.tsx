@@ -52,16 +52,9 @@ const WorkGallery = () => {
       icon: Wrench
     },
     {
-      image: "/assets/unidade-ui.jpg",
-      title: "Unidade Injetora UI",
-      description: "Teste especializado de unidade injetora UI em equipamento de alta precisão com verificação eletrônica completa.",
-      category: "Unidade Injetora",
-      icon: Settings
-    },
-    {
       image: "/assets/unidades-up.jpg",
-      title: "Unidades Injetoras UP",
-      description: "Recondicionamento e teste de unidades injetoras UP com calibração precisa e verificação de todos os parâmetros.",
+      title: "Unidades Injetoras UI e UP",
+      description: "Recondicionamento e teste especializado de unidades injetoras UI e UP com calibração precisa e verificação eletrônica completa.",
       category: "Unidade Injetora",
       icon: Settings
     }
